@@ -24,11 +24,11 @@ public class NewSeleneseMavenTest extends SeleneseTestBase {
     @Test
     public void testSimple() throws Exception {
         selenium.open("/cursac");
-        selenium.waitForPageToLoad("30000");
+        selenium.waitForPageToLoad("30");
         selenium.type("name=txtNum1", "2");
         selenium.type("name=txtNum2", "6");
         selenium.click("name=btnSuma");
-        selenium.waitForPageToLoad("20000");
+        selenium.waitForPageToLoad("20");
     }
     
 }
