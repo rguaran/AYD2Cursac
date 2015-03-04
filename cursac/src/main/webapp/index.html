@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Prueba Servlets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <form name="Calcu" action="Operaciones" method="POST">
+            <div>Calculadora</div> <br>
+            Numero 1 : <input type="text" name="txtNum1" id="num1"> <br> <br>
+            Numero 2 : <input type="text" name="txtNum2" id="num2"> <br> <br>
+            <input type="submit" value="+" name="btnSuma"/>
+            <input type="submit" value="-" name="btnResta"/>
+        </form>
     </body>
 </html>
