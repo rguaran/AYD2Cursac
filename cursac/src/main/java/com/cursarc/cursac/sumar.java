@@ -9,12 +9,11 @@ package com.cursarc.cursac;
  *
  * @author RITA
  */
-public class resta {
+public class sumar {
+    public sumar(){}
     
-    public resta(){}
-    
-    public int restar(int a, int b){
-    return a-b;
+    public int suma(int a,int b){
+    return a+b;
     }
     
 }
