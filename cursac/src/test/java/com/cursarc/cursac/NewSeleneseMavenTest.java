@@ -27,8 +27,8 @@ public class NewSeleneseMavenTest extends SeleneseTestBase {
         selenium.waitForPageToLoad("30");
         selenium.type("name=txtNum1", "2");
         selenium.type("name=txtNum2", "6");
-        selenium.click("name=btnSuma");
-        selenium.waitForPageToLoad("30");
+        selenium.click("id=btnSuma");
+        selenium.waitForPageToLoad("40");
     }
     
 }

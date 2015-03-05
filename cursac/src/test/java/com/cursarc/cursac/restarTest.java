@@ -46,7 +46,7 @@ public class restarTest {
         int a = 25;
         int b = 1;
         restar instance = new restar();
-        int expResult = 23;
+        int expResult = 24;
         int result = instance.restar(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

@@ -89,14 +89,18 @@ public class PruebaServlet extends HttpServlet {
             String bResta = request.getParameter("btnResta");
             
             int res = 0;
+            //sumar sum = new sumar();
+            //restar ress = new restar(); 
             
             if(bSuma!=null){
-                 res = num1 + num2;
+                 //res = sum.suma(num1, num2);
+                res = num1 +num2;
             }else if(bResta!=null){
-                 res = num1 - num2;
+                 //res = ress.restar(num1, num2);
+                res = num1 - num2;
             }
             
-            out.println("Resulado de la suma " + res);
+            out.println("Resultado de la suma " + res);
             
             out.println("</body>");
             out.println("</html>");
