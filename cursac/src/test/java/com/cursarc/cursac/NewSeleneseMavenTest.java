@@ -28,7 +28,7 @@ public class NewSeleneseMavenTest extends SeleneseTestBase {
         selenium.type("name=txtNum1", "2");
         selenium.type("name=txtNum2", "6");
         selenium.click("id=btnSuma");
-        selenium.waitForPageToLoad("40");
+        selenium.waitForPageToLoad("50");
     }
     
 }
