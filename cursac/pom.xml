@@ -95,15 +95,36 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <plugin>
+            <!--plugin-->
                 <!--To support checkstyle goals. For example: "mvn checkstyle:checkstyle"-->
+                <!--groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration-->
+                    <!--<configLocation>/home/greenhorn/NetBeansProjects/greenhorn-checkstyle.xml</configLocation>-->
+                    <!-- The above conguration line works as well, but the below is prefered. -->
+                    <!--configLocation>src/main/resources/checkstyle-rules.xml</configLocation>
+                </configuration>
+            </plugin-->
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <configuration>
-                    <!-- <configLocation>/home/greenhorn/NetBeansProjects/greenhorn-checkstyle.xml</configLocation>-->
-                    <!-- The above conguration line works as well, but the below is prefered. -->
-                    <configLocation>src/main/resources/checkstyle-rules.xml</configLocation>
-                </configuration>
+                <version>2.14</version>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <configuration>
+                            <configLocation>src/main/resources/checkstyle-rules.xml</configLocation>
+                            <encoding>UTF-8</encoding>
+                            <consoleOutput>true</consoleOutput>
+                            <failsOnError>true</failsOnError>
+                            <linkXRef>false</linkXRef>
+                        </configuration>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
         <pluginManagement>
