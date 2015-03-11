@@ -95,7 +95,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <!--plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>2.14</version>
@@ -115,8 +115,8 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin-->
-            <plugin>
+            </plugin>
+            <!--plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>2.14</version>
@@ -125,7 +125,7 @@
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>true</failsOnError>
                 </configuration>
-            </plugin>
+            </plugin-->
                 
         </plugins>
         <pluginManagement>

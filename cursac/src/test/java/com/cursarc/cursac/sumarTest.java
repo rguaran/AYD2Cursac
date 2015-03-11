@@ -40,7 +40,7 @@ public class sumarTest {
     /**
      * Test of suma method, of class sumar.
      */
-    @org.junit.Test
+    @Test
     public void testSuma() {
         System.out.println("suma");
         int a = 0;

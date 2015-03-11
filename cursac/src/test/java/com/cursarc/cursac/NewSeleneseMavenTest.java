@@ -5,7 +5,8 @@
  */
 package com.cursarc.cursac;
 
-import com.thoughtworks.selenium.*;
+import com.thoughtworks.selenium.DefaultSelenium;
+import com.thoughtworks.selenium.SeleneseTestBase;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -28,7 +29,7 @@ public class NewSeleneseMavenTest extends SeleneseTestBase {
         selenium.type("name=txtNum1", "2");
         selenium.type("name=txtNum2", "6");
         selenium.click("id=btnSuma");
-        selenium.waitForPageToLoad("50");
+        selenium.waitForPageToLoad("100");
     }
     
 }

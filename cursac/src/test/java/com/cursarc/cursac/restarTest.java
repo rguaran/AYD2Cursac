@@ -43,10 +43,10 @@ public class restarTest {
     @Test
     public void testRestar() {
         System.out.println("restar");
-        int a = 25;
-        int b = 1;
+        int a = 0;
+        int b = 0;
         restar instance = new restar();
-        int expResult = 24;
+        int expResult = 0;
         int result = instance.restar(a, b);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
