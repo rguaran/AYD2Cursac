@@ -95,16 +95,6 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <!--plugin-->
-                <!--To support checkstyle goals. For example: "mvn checkstyle:checkstyle"-->
-                <!--groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <configuration-->
-                    <!--<configLocation>/home/greenhorn/NetBeansProjects/greenhorn-checkstyle.xml</configLocation>-->
-                    <!-- The above conguration line works as well, but the below is prefered. -->
-                    <!--configLocation>src/main/resources/checkstyle-rules.xml</configLocation>
-                </configuration>
-            </plugin-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
