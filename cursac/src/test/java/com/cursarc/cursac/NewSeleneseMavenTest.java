@@ -18,7 +18,7 @@ public class NewSeleneseMavenTest extends SeleneseTestBase {
     
     @Before
     public void beforeClass() {
-        selenium = new DefaultSelenium("localhost", 4444, "*firefox", "http://localhost:8090");
+        selenium = new DefaultSelenium("localhost", 4444, "*firefox", "http://localhost:8091");
         selenium.start();
     }
     
